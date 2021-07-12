@@ -1,20 +1,20 @@
-## 运行
+## Running program
 
-#### 构建镜像
-首先cd到Dockerfile所在目录
+#### build images
+
 
 ```shell
-# 切换到Dockerfile所在目录
+# go to Dockerfile dir
 cd <Dockerfile_dir>
 ```
 
-执行docker bulid命令
+run docker bulid
 
 ```shell
 docker build -t mycalucator_py:v1
 ```
 
-#### 执行镜像
+#### run images
 
 ```shell
 docker run -it mycalucator_py:v1
