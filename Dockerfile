@@ -1,22 +1,23 @@
-# 基于python镜像
+# python images
 FROM python:3.7
 
-# 作者信息
+# author
 MAINTAINER jinhongTan <https://github.com/jinhongtan/xxx.git>
 
-# 工作目录
+# list
 WORKDIR /code
 
-# 拷贝py文件和requirements.txt文件
+# copy py file and requirements.txt file
 ADD . /code
-# 也可使用以下两句实现
+# Achieve based on below two method
 #COPY test.py /code/
 #COPY requirements.txt /code/
 
-# 更新pip
+# update pip
 RUN pip install --upgrade pip
 
+# pip installation
+RUN pip install -r requirements.txt
 
-
-# 执行python文件
+# run python
 CMD ["python","/code/src/test.py"]
