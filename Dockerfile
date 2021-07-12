@@ -16,8 +16,7 @@ ADD . /code
 # 更新pip
 RUN pip install --upgrade pip
 
-# pip安装依赖包
-RUN pip install -r requirements.txt
+
 
 # 执行python文件
 CMD ["python","/code/src/test.py"]
