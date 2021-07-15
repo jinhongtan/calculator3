@@ -8,7 +8,7 @@ import randomNum
 class test(unittest.TestCase):
 
     data=[]
-    x = StatisticsCalc.StatisticCalc()
+    x = StatisticsCalc.StatisticCalculator()
 
     def setUp(self) -> None:
         self.data=randomNum.intGenerator(self)
@@ -20,7 +20,7 @@ class test(unittest.TestCase):
         self.assertEqual(self.x.median(self.data),statistics.median(self.data))
 
     def test_mode(self):
-        self.assertEqual(self.x.mode(self.data),statistics.mode(self.data))
+        self.assertEqual(self.x.mode(self.data),statistics.multimode(self.data))
 
     def test_variance(self):
         self.assertAlmostEqual(self.x.variance(self.data),statistics.variance(self.data))
