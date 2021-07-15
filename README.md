@@ -20,3 +20,4 @@ docker build -t project2:latest
 docker run -it project2:latest
 ```
 
+![image](https://github.com/jinhongtan/calculator3/blob/main/Project%202%20success%20run.png?raw=true)
