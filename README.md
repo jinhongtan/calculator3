@@ -11,12 +11,12 @@ cd <Dockerfile_dir>
 run docker bulid
 
 ```shell
-docker build -t mycalucator_py:v1
+docker build -t project2:latest
 ```
 
 #### run images
 
 ```shell
-docker run -it mycalucator_py:v1
+docker run -it project2:latest
 ```
 
