@@ -1,5 +1,5 @@
 # python images
-FROM python:3.7
+FROM python:3.9
 
 # author
 MAINTAINER jinhongTan <https://github.com/jinhongtan/xxx.git>
